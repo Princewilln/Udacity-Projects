@@ -1,0 +1,41 @@
+/* this is the outer box, which houses other boxes */
+.outer-container { 
+	border: 0.5px ridge lightgray;
+	width: 320px;
+	box-shadow: 8px 8px lightgray;
+}
+/* this box is to design the animal name withing its own box */
+#animal-name{ 
+	-webkit-box-sizing: border-box; /* adding webkit for chrome to ensure the padding doesn't affect the box size */
+	border: 0.5px ridge lightgray;
+	width: 300px;
+	margin: 10px;
+	padding: 10px;
+}
+/* this box is used to design the image */
+img{
+	-webkit-box-sizing: border-box;
+	border: 0.5px ridge lightgray;
+	width: 300px;
+	margin: 10px;	
+}
+/* this is the inner box that contains the text information for the card facts and description of the favorite animal */
+.inner-content-box{
+	-webkit-box-sizing: border-box;
+	border: 0.5px ridge lightgray;
+	width: 300px;
+	margin: 10px;
+	padding: 10px;
+}
+/* the ID rulset below is used to style the cards interesting fact of the animal in italic */
+#italic { font-style: italic;
+}
+/* the unordered ruleset below is use to customise the list items about the animal */
+ul { 
+	list-style-type: none;
+	padding: 0;
+}
+/* the bold is a class that uses font to style the <stan> element part of the list */
+.bold { font: normal normal bold 20px serif ;
+
+} 
