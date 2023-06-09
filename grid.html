@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercise 1</title>
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+      name="viewport"
+    />
+
+  <style>
+  .container{
+    /* Step 1: Set display to grid */
+      display:grid;
+      width: 100%;
+      margin: auto;
+   /* Step 2: setup rows amd columns */
+      grid-gap: 15px;
+      grid-template-areas: "top top"
+      "bottomLeft bottomRight";
+      grid-template-columns: 35vw 35vw 35vw;  
+       grid-template-rows: 45vh 45vh ;
+      border: 2px solid yellow;
+      justify-content: center;
+
+  }
+  .box{
+        border: 1px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+     #one{ 
+    /* set grid-area here: row start/column start/ row end/ column end */
+    grid-area: top;
+  }
+    #two{
+    /* grid-area: 1/2/3/3; */
+    grid-area: bottomLeft;
+  
+  }
+    #three {
+    grid-area: bottomRight;
+
+  }
+  </style>
+  </head>
+
+  <body>
+  <div class = "container">
+    <div id="one" class="box"> Space 1</div>
+    <div id="two" class="box"> Space 2</div>
+    <div id="three" class="box"> Space 3</div>
+  
+  </div>
+  </body>
+</html>
