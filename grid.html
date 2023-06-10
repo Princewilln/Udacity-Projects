@@ -12,34 +12,45 @@
   .container{
     /* Step 1: Set display to grid */
       display:grid;
+      width: 80vw;
+      height: 100vh;
+      grid-gap: 15px;
+      margin: auto;
+      /* grid-template-rows: 350px 350px 1fr 1fr; */
    /* Step 2: setup rows amd columns */
       /* grid-template-columns: repeat(3, 1fr); */
-      grid-template-columns: 30px 300px;
-      grid-template-rows: 250px 600px 30px;
-      grid-template-areas: 
+      grid-template-columns: repeat(2, 1fr );
+      /* grid-template-columns: 1fr 1fr ; */
+      grid-auto-rows: minmax(100px, auto);
+      /* grid-template-columns:  repeat(4, 70px);   */
+       /* grid-template-columns: (4, 1fr); */
+      /* grid-template-areas: 
       "hd hd hd hd hd hd hd hd"
       "sd main main main main main main main"
-      "ft ft ft ft ft ft ft ft";
-      border: 2px solid yellow;
+      "ft ft ft ft ft ft ft ft"; */
+      border: 2px solid rgb(51, 0, 255); 
+      justify-content: center;
   }
   .box{
-    border: 1px solid red;
+    display: flex;
+    border: 2px solid red;
     background: #F8FA9D;
     text-align: center;
+    justify-content: center;
     }
 /* Assign grid area below */
   .header{
-     grid-area: hd;
+     /* grid-area: hd; */
   }
   .footer{
-    grid-area: ft;
+    /* grid-area: ft; */
   
   }
   .sidebar{
-    grid-area: sd;
+    /* grid-area: sd; */
   }
   .content{
-    grid-area: main;
+    /* grid-area: main; */
   }
   </style>
   </head>
