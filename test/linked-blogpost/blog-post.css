@@ -1,0 +1,38 @@
+.container{
+    /* Step 1: Set display to grid */
+      display:grid;
+      grid-template-rows: 300px 300px 300px; ;
+      grid-template-columns: 250px 600px;
+   /* Step 2: setup rows amd columns */
+   /* Step : setup named grid areas */
+   grid-template-areas: 
+      "hd hd hd hd hd hd hd hd"
+      "sd main main main main main main main"
+      "ft ft ft ft ft ft ft ft"; 
+  
+      border: 2px solid green;
+
+  }
+  .box{
+    border: 1px solid red;
+    background: #F8FA9D;
+    }
+
+  .header{
+      /* Set elements grid-area here */
+      grid-area: hd;
+  }
+
+  .footer{
+    /* Set elements grid-area here */
+      grid-area: sd;
+  }
+  .feature{
+    /* Set elements grid-area here */
+      grid-area: main;
+  }
+  .content{
+    /* Set elements grid-area here */
+      grid-area: ft;
+      background-image: url(https://i.pinimg.com/564x/62/3f/72/623f72dd4ae0c026e245f213ef53235b.jpg);
+  }
