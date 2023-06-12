@@ -57,7 +57,7 @@
   } 
   #one{
     background-image: url(https://i.pinimg.com/564x/56/33/53/563353802b80f8850b4ad79f18f7edc5.jpg);
-    background-size: contain;
+    background-size: cover;
     
 
   }
@@ -74,7 +74,7 @@
   }
   #four{
     background-image: url(  https://i.pinimg.com/564x/29/0f/0d/290f0dcc30e772eccb886b5771212a6b.jpg);
-    background-size: contain;
+    background-size: cover;
 
   }  
 
