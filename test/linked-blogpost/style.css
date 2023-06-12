@@ -4,15 +4,16 @@
    /* Step 2: setup rows amd columns */
       /* grid-template-columns: repeat(3, 1fr); */
       grid-template-columns: 850px;
-      grid-template-rows: 250px 1fr 1fr;
+      grid-template-rows: 100%;
       grid-template-areas: 
       "hd"
       "sd" 
       "main"
       "ft";
-      border: 2px solid yellow;
+      border: 2px solid green;
+    }
+  
 
-  }
   .box{
   /* width: 250px;
     height: 150px; */
@@ -33,10 +34,50 @@
   }
   .content{
     grid-area: main;
-    background-image: url(https://i.pinimg.com/564x/6c/4b/da/6c4bdaf407fa0831ebf08fe023120df2.jpg);
+    
     background-size: contain;
     background-repeat: no-repeat;
       }
+  #nestedGrid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:50% 50%;
+    border: 3px solid black;
+    grid-gap: 15px;
+    grid-column-gap: none;
+   
+
+  }   
+  .photoBox{
+    width: 550px;
+    height: 150px;
+    border: 1px solid black;
+    background: #F9FA4d;
+    
+  } 
+  #one{
+    background-image: url(https://i.pinimg.com/564x/56/33/53/563353802b80f8850b4ad79f18f7edc5.jpg);
+    background-size: contain;
+    
+
+  }
+  #two{
+    background-image: url(https://i.pinimg.com/236x/57/1c/28/571c28d5069783fa0c70bfa9cc65f269.jpg);
+    background-size: contain;
+    
+
+  }
+  #three{
+    background-image: url(https://i.pinimg.com/564x/2c/0b/f3/2c0bf3a34c3c0a3bd4b3821bb5df4c93.jpg);
+    background-size: contain;
+
+  }
+  #four{
+    background-image: url(  https://i.pinimg.com/564x/29/0f/0d/290f0dcc30e772eccb886b5771212a6b.jpg);
+    background-size: contain;
+
+  }  
+
 
   @media(min-width:600px) and (max-width:1100px) {
 .container{
@@ -53,10 +94,10 @@
   /* large screens*/
   @media (min-width:1101px){
     .container{
-      border: 5px solid blue;
       grid-template-areas: 
       "hd hd hd hd hd hd hd hd"
       "sd sd sd sd main main main main"
       "ft ft ft ft ft ft ft ft";
+      border: 5px solid blue;
     }
   }
