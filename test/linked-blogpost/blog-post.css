@@ -1,16 +1,17 @@
 .container{
-    /* Step 1: Set display to grid */
+   /* Step 1: Set display to grid */
       display:grid;
-      grid-template-rows: 300px 300px 300px; ;
-      grid-template-columns: 250px 600px;
    /* Step 2: setup rows amd columns */
-   /* Step : setup named grid areas */
-   grid-template-areas: 
-      "hd hd hd hd hd hd hd hd"
-      "sd main main main main main main main"
-      "ft ft ft ft ft ft ft ft"; 
-  
-      border: 2px solid green;
+      /* grid-template-columns: repeat(3, 1fr); */
+      grid-template-columns: 850px;
+      grid-template-rows: 250px 1fr 1fr;
+      grid-template-areas: 
+      "hd"
+      "sd" 
+      "main"
+      "ft";
+      border: 2px solid yellow;
+
 
   }
   .box{
@@ -25,14 +26,35 @@
 
   .footer{
     /* Set elements grid-area here */
-      grid-area: sd;
+      grid-area: ft;
   }
   .feature{
     /* Set elements grid-area here */
-      grid-area: main;
+/*      grid-area: feat;*/
   }
   .content{
     /* Set elements grid-area here */
-      grid-area: ft;
-      background-image: url(https://i.pinimg.com/564x/62/3f/72/623f72dd4ae0c026e245f213ef53235b.jpg);
+      grid-area: main;
+      height: 300px;
+      background-size: contain;
+    background-repeat: no-repeat;
+      background-image: url(https://i.pinimg.com/564x/56/33/53/563353802b80f8850b4ad79f18f7edc5.jpg);
+}
+  @media(min-width:900px){
+    .container{ 
+            display:grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 250px 600px;
+      grid-template-areas: 
+      "hd hd hd hd hd hd hd hd"
+      "feat feat feat feat feat feat feat feat"
+      "main main main main main main main main"
+      "ft ft ft ft ft ft ft ft";
+      border: 2px solid yellow; 
+
+    }
   }
+
+
+
+  
