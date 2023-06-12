@@ -38,7 +38,7 @@
     background-repeat: no-repeat;
       }
 
-  @media(min-width:900px){
+  @media(min-width:600px) and (max-width:1100px) {
 .container{
       display:grid;
       grid-template-columns: 300px 300px 300px;
@@ -47,6 +47,16 @@
       "hd hd hd hd hd hd hd hd"
       "sd sd main main main main main main"
       "ft ft ft ft ft ft ft ft";
-      border: 2px solid red;
+      border: 5px solid aquamarine;
   }
 }    
+  /* large screens*/
+  @media (min-width:1101px){
+    .container{
+      border: 5px solid blue;
+      grid-template-areas: 
+      "hd hd hd hd hd hd hd hd"
+      "sd sd sd sd main main main main"
+      "ft ft ft ft ft ft ft ft";
+    }
+  }
