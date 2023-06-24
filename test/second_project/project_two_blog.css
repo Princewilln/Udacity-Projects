@@ -14,21 +14,21 @@
 }
 
 #intouch{
-/*	position: absolute;*/
     top: 50px;
-	border: 2px solid black;
-	height: 100px;
-	width: 50%;
-	margin: 10px 0px 20px 20px;
+	margin: auto;
+	margin-top: 10px;
+}
+
+h1 {
+  text-align: center;
 }
 
 img {
 	-webkit-box-sizing: border-box;
-	width: 100px;
-	height: 100px;
+	width: 90%;
 	border: 2px solid deeppink;
-	margin: 10px;
-	
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 .box {
@@ -65,26 +65,22 @@ img {
 }
 .photoBox {
 	display: flex;
+	flex-direction: row;
 	justify-content: center;
 	border: 2px solid green;
 }
 
 #one {
 	-webkit-box-sizing: border-box;
-	display: flex;
+	height: 400px;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
 /*	margin: 10px;*/
-	flex-direction: column;
 /*	flex-wrap: wrap;*/
 /*	align-items:center;*/
 /*	align-self: flex-start;*/
 /*    border: 4px solid white;*/
-
-
-
-
-
-
-
 }
 
 #two {
