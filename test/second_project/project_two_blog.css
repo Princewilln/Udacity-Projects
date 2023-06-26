@@ -1,50 +1,72 @@
 
 .container {
 	display:grid;
-/*	height: 100%;*/
-	grid-template-rows:109px 1000px 40px ;
+	height: 100%;
+	grid-template-rows:109px 1000px 60px ;
 	grid-template-columns:100px 100px;
 	grid-template-areas: 
 	"hd hd hd hd hd hd hd hd"
 	"sd main main main main main main main"
 	"ft ft ft ft ft ft ft ft" ;
 /*	grid-gap: 15px ;*/
-	border:2px solid red;
+	border:6px solid red;
 
 }
 
-#intouch{
+#card{
 /*	position: absolute;*/
     top: 50px;
-	border: 2px solid black;
+	/*border: 2px solid black;
 	height: 100px;
-	width: 50%;
-	margin: 10px 0px 20px 20px;
+	width: 50%;*/
+	margin: auto;
+	margin-top: 10px ;
+
+
 }
 
+h1 {
+	text-align: center;
+}
 img {
 	-webkit-box-sizing: border-box;
-	width: 100px;
-	height: 100px;
-	border: 2px solid deeppink;
-	margin: 10px;
-	
-}
+	width: 90%;
+/*	height: 100px;*/
+/*	border: 2px solid deeppink;*/
+	margin-left: 5%;
+	margin-right:5%;
 
+}
+#caption {
+	text-align: center;
+	font-style: italic;
+}
 .box {
-	border: 4px solid #ff8000;
-	background:#F8FA9D;
+/*border: 4px solid #ff8000;
+	background:#F8FA9D;*/
 /*	height: 100%;*/
 
 }
 
 .header {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 	grid-area:hd;
-	
-	
+	background-color: lightgray;
+	background-image: url(https://media.istockphoto.com/id/1479143249/photo/whats-your-story.webp?b=1&s=170667a&w=0&k=20&c=rliDamg5E7EMNAMWvJ5mxr5T8fhFEpVPk6kMcpqWlaM=);
+
+
+}
+
+#first_para {
+	margin-top: 40px;
 }
 .sidebar {
 	grid-area:sd;
+	background-color: #527a7a;
+	padding: 20px;
+/*	margin-top: 20px;*/
 /*	height:100%;*/
 	/*width:100px;
 	height:300px;
@@ -65,59 +87,98 @@ img {
 }
 .photoBox {
 	display: flex;
+	flex-direction: row;
 	justify-content: center;
-	border: 2px solid green;
+/*	border: 2px solid green;*/
 }
 
 #one {
 	-webkit-box-sizing: border-box;
-	display: flex;
-/*	margin: 10px;*/
-	flex-direction: column;
+/*	display: block;*/
+	height: 96%;
+	margin: auto;
+    margin-top: 10px;
+/*    margin-bottom: 200px;*/
+	width: 90%;
+	padding: 10px;
+	border: 1px solid lightgrey;
+/*	flex-direction: column;*/
 /*	flex-wrap: wrap;*/
 /*	align-items:center;*/
 /*	align-self: flex-start;*/
 /*    border: 4px solid white;*/
-
-
-
-
-
-
-
 }
 
 #two {
-	background-image: ;
+	display: block;
+	flex-direction: row;
+	padding: 10px;
+	/*margin: auto;
+	border: 1px solid lightgrey*/
+/*	text-align: center;*/
+
+}
+
+#three {
+	display: block;
+	padding: 10px;
+	/*border: 1px solid lightgrey;
+	margin: auto;*/
 }
 
 .footer {
+	background-color: #537979;
+    padding: 20px;
 	grid-area:ft;
-	height:40px
+	height:60px ;
+	text-align: center;
 	/*width:100%;
-	height:40px;
-	border:2px solid springgreen;*/
+	height:40px;*/
+	border:1px solid lightgray;
 
 }
+.accept {
+	display: block;
+}
+
+.sharing {
+	list-style-type: none;
+	display: flex;
+
+}
+
+
+
+.share-facebook {
+	margin: 10px;
+}	
+
+.share-twitter {
+	margin: 10px;
+}
 /* medium Screen */
-@media(min-width:600px) and (max-width:1100px) {
+@media(min-width:400px) and (max-width:1100px) {
 .container{
       display:grid;
-      grid-template-columns:300px 300px 300px;
-      grid-template-rows: 250px 600px;
-      grid-template-areas: 
-      "hd hd hd hd hd hd hd hd"
-      "sd sd main main main main main main"
-      "ft ft ft ft ft ft ft ft";
-      border: 5px solid aquamarine;
+      grid-template-columns: auto ;
+      grid-template-rows: minmax(100px, 1fr) ;
+/*      grid-template-areas: */
+/*      "hd hd hd hd hd hd hd hd"
+      "main main main main main main main main"
+      "ft ft ft ft ft ft ft ft";*/
+      border: 1px solid lightgrey;
   }
-
-/* large screens*/
+}    
+  /* large screens*/
 @media (min-width:1101px){
-.container{
-      grid-template-areas: 
+    .container{
+    	grid-template-columns: auto;
+    	grid-template-rows: minmax(100px, 1fr);
+ /*     grid-template-areas: 
       "hd hd hd hd hd hd hd hd"
       "sd sd sd sd main main main main"
-      "ft ft ft ft ft ft ft ft";
-      border: 5px solid blue;
+      "ft ft ft ft ft ft ft ft";*/
+      border: 1px solid lightgrey;
     }
+  }
+/*@media (min-width:600px) and (max-width:1100px */
