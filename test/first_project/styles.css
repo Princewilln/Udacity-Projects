@@ -6,7 +6,7 @@
 }
 /* this box is to design the animal name withing its own box */
 #animal-name{ 
-	-webkit-box-sizing: border-box; /* adding webkit for chrome to ensure the padding doesn't affect the box size */
+	box-sizing: border-box; /* adding webkit for chrome to ensure the padding doesn't affect the box size */
 	border: 0.5px ridge lightgray;
 	width: 300px;
 	margin: 10px;
@@ -14,14 +14,14 @@
 }
 /* this box is used to design the image */
 img{
-	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 	border: 0.5px ridge lightgray;
 	width: 300px;
 	margin: 10px;	
 }
 /* this is the inner box that contains the text information for the card facts and description of the favorite animal */
 .inner-content-box{
-	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 	border: 0.5px ridge lightgray;
 	width: 300px;
 	margin: 10px;
@@ -36,7 +36,6 @@ ul {
 	padding: 0;
 }
 /* the bold is a class that uses font to style the <stan> element part of the list */
-.bold { 
-	font: normal normal bold 20px serif ;
+.bold { font: normal normal bold 20px serif ;
 
 } 

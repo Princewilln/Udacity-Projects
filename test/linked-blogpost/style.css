@@ -73,7 +73,7 @@
 
   }
   #four{
-    background-image: url(  https://i.pinimg.com/564x/29/0f/0d/290f0dcc30e772eccb886b5771212a6b.jpg);
+    background-image: url(https://i.pinimg.com/564x/29/0f/0d/290f0dcc30e772eccb886b5771212a6b.jpg);
     background-size: cover;
 
   }  
@@ -82,7 +82,7 @@
   @media(min-width:600px) and (max-width:1100px) {
 .container{
       display:grid;
-      grid-template-columns: 300px 300px 300px;
+      grid-template-columns:300px 300px 300px;
       grid-template-rows: 250px 600px;
       grid-template-areas: 
       "hd hd hd hd hd hd hd hd"
