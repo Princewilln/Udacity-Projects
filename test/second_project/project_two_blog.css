@@ -10,7 +10,7 @@
 	"sd main main main main main main main"
 	"ft ft ft ft ft ft ft ft" ;
 /*	grid-gap: 15px ;*/
-	border:6px solid red;
+/*	border:6px solid red;*/
 
 }
 
@@ -116,7 +116,7 @@ img {
 	padding: 20px;
 /*	width: 100%;*/
 /*	margin: auto;*/
-	border: 1px solid lightgrey
+/*	border: 1px solid lightgrey*/
 /*	text-align: center;*/
 
 }
@@ -169,7 +169,7 @@ img {
 /*      "hd hd hd hd hd hd hd hd"
       "main main main main main main main main"
       "ft ft ft ft ft ft ft ft";*/
-      border: 1px solid lightgrey;
+/*      border: 1px solid lightgrey;*/
   }
 }    
   /* large screens*/
