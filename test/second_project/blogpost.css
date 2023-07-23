@@ -1,6 +1,6 @@
-@import "main.css";  /* imports main.css file into blog.css from an external file in the same folder  */
-@import "footer.css"; /* imports footer.css  file into blog.css from an external file in the same folder  */
-@import "body.css"; /* imports body.css file into blog.css from an external file in the same folder  */
+/* @import "main.css";  /* imports main.css file into blog.css from an external file in the same folder  */
+/* @import "footer.css"; imports footer.css  file into blog.css from an external file in the same folder  */
+/* @import "body.css"; imports body.css file into blog.css from an external file in the same folder  */
 
 /* .fa is a class attribute associated to the social media logo to design the from the link on the html code  */
 .fa {
@@ -47,7 +47,14 @@ header {
      grid-area: header;
      border:1px solid #FFDB58;
 }
-/* this code gives the main body a color*/
+/* this code divides the area of the body*/
+body {
+  display: grid;
+  grid-template-areas: 
+"header header header header header header header header header header header header  header"
+"sidebar main main main main main main main main main main main main"
+"footer footer footer footer footer footer footer footer footer footer footer footer footer";
+}
 #mainbody {
   background-color: lightgrey;
 }
@@ -73,24 +80,32 @@ header {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-  }
+}
   
-  .topnav a:hover {
+.topnav a:hover {
     background-color: #ddd;
     color: black;
-  }
-  .topnav img.active {
+}
+.topnav img.active {
     float: right;
     width: 200px;
     height: 200px;
 
-  }
+}
   
-  .topnav a.active {
+.topnav a.active {
     /* background-color: black; */
     color: white;
     border: 1px solid rgb(54, 51, 51);
-  }
+}
+
+#main { 
+    /* background-color: blueviolet; */
+    min-height: 600px;
+    grid-area: main;
+    background-color: lightgrey;
+    padding: 20px;
+}  
 
 #sidebar{ 
     /* background-color: brown; */
@@ -100,8 +115,15 @@ header {
     margin: 20px;
     padding: 2px;
     background-color: rgb(202, 202, 202) ;
-    font-weight: bold;
-    
+    font-weight: bold;   
+}
+
+footer { 
+  background-color: aquamarine;
+  min-height: 200px;
+  grid-area: footer;
+  border:1px solid #FFDB58;
+  background-image: url(https://media.istockphoto.com/id/1047259374/photo/programming-source-code-abstract-background.jpg?s=612x612&w=0&k=20&c=07DAFiujCb58Zgu5ZArLprHiSKew5pCGqbTnop9GclA=);
 }
 
 img {
@@ -114,6 +136,7 @@ img {
 		font-family: 'Times New Roman', Times, serif;
 	}
 }
+
 @media only screen and (max-width: 600px) {
 	body {
 		font-family: Arial, Helvetica, sans-serif;
