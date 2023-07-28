@@ -1,10 +1,20 @@
 .sidebar {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
 	grid-area: sd;
 	background-color: #527a7a;
 	padding: 5px;
-/*	margin-top: 20px;*/
-/*	height:100%;*/
-	/*width:100px;
-	height:300px;
-	border:2px solid saddlebrown;*/
+	border: 2px solid  #6ea570;;
+
 }	
+#btdesign {
+	background-color: #6ea570; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}

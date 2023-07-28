@@ -1,3 +1,21 @@
+/*This block of code is used to ensure media compatibility my this code on different display devices*/
+  @media only screen and (max-width: 1100px) {
+	body {
+		font-family: 'Times New Roman', Times, serif;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		font-family: Arial, Helvetica, sans-serif;
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+		"header"
+		"sidebar"
+		"main"
+		"footer";
+	}
+}
 /* medium Screen */
 /* @media(min-width:200px) and (max-width:1100px) {
 .container{
@@ -16,20 +34,3 @@
       border: 1px solid lightgrey;
     }
   } */
-  @media only screen and (max-width: 1100px) {
-	body {
-		font-family: 'Times New Roman', Times, serif;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	body {
-		font-family: Arial, Helvetica, sans-serif;
-		grid-template-columns: 1fr;
-		grid-template-areas: 
-		"header"
-		"sidebar"
-		"main"
-		"footer";
-	}
-}
