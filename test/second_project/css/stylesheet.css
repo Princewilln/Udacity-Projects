@@ -1,6 +1,5 @@
 @import "footer.css";
 @import "header.css";
-@import "media.css";
 @import "sidebar.css";
 
 .container {
@@ -163,6 +162,8 @@ h3 {
 		"ft";
 	}
 }
+
+
 
 
 /* image used in this project was gotten from https://media.istockphoto.com/id/1479143249/photo/whats-your-story.webp?b=1&s=170667a&w=0&k=20&c=rliDamg5E7EMNAMWvJ5mxr5T8fhFEpVPk6kMcpqWlaM= */
