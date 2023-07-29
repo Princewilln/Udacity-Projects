@@ -63,12 +63,13 @@ header {
 body {
   display: grid;
   grid-template-areas: 
-"header header header header header header header header header header header header  header"
-"leftcontent sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar rightcontent"
-"leftcontent main main main main main main main main main main main rightcontent"
-"footer footer footer footer footer footer footer footer footer footer footer footer footer";
+" header header header"
+"leftcontent sidebar rightcontent"
+"leftcontent main rightcontent"
+"footer footer  footer";
 }
 #mainbody {
+  display: grid;
   background-color: white;
 }
 
@@ -165,7 +166,50 @@ img {
   width: 300px;
 }
 
-@media only screen and (max-width: 1100px) {
+
+/* Tablets and Medium-sized Screens */
+@media screen and (max-width: 1600px) {
+  body {
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  #leftcontent {
+    width: 100%;
+  }
+  #rightcontent {
+    width: 100%;
+  }
+  #main {
+    width: 100%;
+    margin: auto;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "leftcontent"
+        "sidebar"
+        "main"
+        "rightcontent"
+        "footer";
+}
+}
+
+/* Mobile Phones and Small Screens */
+@media screen and (max-width: 500px) {
+  #avatar {
+    height: 100px;
+    width: 100px;
+  }
+
+}
+
+
+
+
+
+/* @media only screen and (max-width: 1100px) {
 	body {
 		font-family: 'Times New Roman', Times, serif;
 	}
@@ -173,15 +217,18 @@ img {
 
 @media only screen and (max-width: 600px) {
 	body {
+    display: grid;
 		font-family: Arial, Helvetica, sans-serif;
 		grid-template-columns: 1fr;
 		grid-template-areas: 
 		"header"
+    "leftcontent"
 		"sidebar"
 		"main"
+    "rightcontent"
 		"footer";
 	}
-}
+} */
 /* images used for this project was gotten from https://media.istockphoto.com/id/1047259374/photo/programming-source-code-abstract-background.jpg?s=612x612&w=0&k=20&c=07DAFiujCb58Zgu5ZArLprHiSKew5pCGqbTnop9GclA=  */
 /* https://media.istockphoto.com/id/1404812859/vector/colorful-business-concept-with-speech-bubbles-on-blue-background.jpg?s=612x612&w=0&k=20&c=Q0zfkp2x1BUgvy_7hFWAucaL2yNwcpDxUyzk_3AOaxM=
 https://media.istockphoto.com/id/1404812859/vector/colorful-business-concept-with-speech-bubbles-on-blue-background.jpg?s=612x612&w=0&k=20&c=Q0zfkp2x1BUgvy_7hFWAucaL2yNwcpDxUyzk_3AOaxM= 

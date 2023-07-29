@@ -116,5 +116,53 @@ h3 {
 	margin: 10px;
 }
 
+/*This block of code is used to ensure media compatibility my this code on different display devices*/
+@media only screen and (max-width: 1100px) {
+	body {
+		font-family: 'Times New Roman', Times, serif;
+	}
+}
+@media only screen and (max-width: 750px) {
+	#nestedGrid {
+		grid-template-columns: 1fr;
+
+	}
+
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		display: grid;
+		font-family: Arial, Helvetica, sans-serif;
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+		"hd"
+		"sd"
+		"main"
+		"ft";
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	h1 {
+		font-size: 1.5em;
+
+	}
+	.fa {
+		padding: 17px;
+		width: 17px;
+	}
+	.header {
+		justify-content: left;
+	}
+	.container {
+		grid-template-areas: 
+		"hd"
+		"sd"
+		"main"
+		"ft";
+	}
+}
+
 
 /* image used in this project was gotten from https://media.istockphoto.com/id/1479143249/photo/whats-your-story.webp?b=1&s=170667a&w=0&k=20&c=rliDamg5E7EMNAMWvJ5mxr5T8fhFEpVPk6kMcpqWlaM= */
