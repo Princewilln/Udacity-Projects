@@ -36,6 +36,6 @@ ul {
 	padding: 0;
 }
 /* the bold is a class that uses font to style the <stan> element part of the list */
-.bold { font: normal normal bold 20px serif ;
-
+.bold { 
+	font: normal normal bold 20px serif ;
 } 
